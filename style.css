@@ -1,0 +1,135 @@
+body {
+  box-sizing: border-box;
+  /* display: flex;
+ flex-direction: column;
+ flex-wrap: wrap; */
+}
+header {
+  max-width: 100%;
+  min-height: 80px;
+  /* border: 1px black solid; */
+  border-radius: 10px;
+  text-align: center;
+  background-color: yellow;
+}
+.headerItem {
+  /* background-color: aqua; */
+  margin: 10px 0px;
+}
+section {
+  max-width: 100%;
+  min-height: 130px;
+  /* border: 1px black solid; */
+  border-radius: 10px;
+  margin-top: 10px;
+  display: flex;
+  flex-wrap: wrap;
+}
+.secItem1 {
+  height: 60px;
+  width: 150px;
+  /* border: 1px black solid; */
+  border-radius: 10px;
+  background-color: orange;
+  text-align: left;
+}
+.secItem2 {
+  height: 130px;
+  width: 300px;
+  /* border: 1px black solid; */
+  border-radius: 10px;
+  margin-left: 20px;
+  background-color: blue;
+  color: white;
+}
+.secItem3 {
+  height: 90px;
+  width: 300px;
+  /* border: 1px black solid; */
+  border-radius: 10px;
+  margin-left: 10px;
+  background-color: blue;
+  color: white;
+}
+.secItem4 {
+  height: 110px;
+  width: 300px;
+  /* border: 1px black solid; */
+  border-radius: 10px;
+  margin-left: 10px;
+  background-color: blue;
+  color: white;
+}
+footer {
+  min-height: 50px;
+  width: 100%;
+  /* border: 1px black solid; */
+  border-radius: 10px;
+  margin-top: 10px;
+  background-color: pink;
+}
+footer p {
+  margin: 0px;
+}
+@media screen and (width: 936px) {
+  section {
+    height: 215px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-end;
+  }
+  .secItem1 {
+    height: 70px;
+    width: 200px;
+    padding: 15px 0px 0px;
+  }
+  .secItem2 {
+    height: 150px;
+    width: 345px;
+  }
+  .secItem3 {
+    height: 90px;
+    width: 345px;
+  }
+  .secItem4 {
+    position: absolute;
+    bottom: 415px;
+    height: 110px;
+    width: 345px;
+    margin-top: 0px;
+  }
+}
+@media screen and (max-width: 600px) {
+  header {
+    text-align: left;
+    font-size: x-large;
+  }
+  section {
+    display: block;
+  }
+  .secItem1 {
+    width: 100%;
+    margin-bottom: -10px;
+  }
+  .secItem2 {
+    width: 100%;
+    margin: 0px;
+    margin-bottom: -10px;
+  }
+  .secItem3 {
+    width: 100%;
+    margin: 0px 0px -10px;
+  }
+  .secItem4 {
+    width: 100%;
+    margin: 0px;
+  }
+}
+@media screen and (max-width: 480px) {
+  header {
+    min-height: 50px;
+  }
+  header h3 {
+    display: none;
+  }
+}
